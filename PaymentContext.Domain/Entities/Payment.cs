@@ -28,6 +28,6 @@ public class CreditCardPayment : Payment
 }
 
 public class PaypalPayment : Payment
-{j
+{
    public string TransactionCode { get; set; }
 }
