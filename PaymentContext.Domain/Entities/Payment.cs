@@ -10,12 +10,12 @@ public abstract class Payment
    public string Document { get; set; }
    public string Payer { get; set; }
    public string Adress { get; set; }
+   public string Email { get; set; }
 }
 
 public class BoletoPayment : Payment
 {
    public string BarCode { get; set; }
-   public string Email { get; set; }
    public string BoletoNumber { get; set; }
 }
 
@@ -23,11 +23,11 @@ public class BoletoPayment : Payment
 public class CreditCardPayment : Payment
 {
    public string CardNumber { get; set; }
-   public string CardNumber { get; set; }
-   public string LastTrans { get; set; }
+   public string CardHolderName { get; set; }
+   public string LastTransactionNumber { get; set; }
 }
 
 public class PaypalPayment : Payment
-{
-   
+{j
+   public string TransactionCode { get; set; }
 }
